@@ -223,7 +223,7 @@ font-size: 80px;
   
 }
 .bg-cc{
-  background-image: url('/img/sec1.jpg') ;
+  background-image: url('../img/sec1.jpg') ;
   width: 100%;
   filter: brightness(20%);
   height: 100%;

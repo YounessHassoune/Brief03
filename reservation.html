@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CarRent</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+
+
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+       =
+      </label>
+      <label class="logo">Car<span style="color:#d01818">Rent</span></label>
+      <ul>
+        <li><a  href="index.html">Home</a></li>
+        <li><a href="index.html#gallery">Gallary</a></li>
+        <li><a class="active" href="reservation.html">Reservation</a></li>
+        <li><a href="index.html#contact">Contact</a></li> 
+      </ul>
+    </nav>
+   
+
+  <section class="reservation-content">
+    <h1>Rent Now</h1>
+    <div class="select-box">
+      <select name="type" >
+        <option value="0">Select Type:</option>
+        <option value="1">Moto</option>
+        <option value="2">Citadine</option>
+        <option value="3">Compact</option>
+        <option value="4">Berline</option>
+        <option value="5">Utlitaire</option>
+        <option value="6">Engin</option>
+        <option value="7">Camion</option>
+      </select>
+      <select name="fuel">
+        <option value="0">Select fuel:</option>
+        <option value="1">Electrique</option>
+        <option value="2">Hybride</option>
+        <option value="3">Essence</option>
+        <option value="4">Diesel</option>
+      </select>
+      <select name="gear">
+        <option value="0">Select gear-box:</option>
+        <option value="1">Manuelle</option>
+        <option value="2">Automatique</option>
+      </select>
+     </div>
+     <input  type="text" class="days" placeholder=" number of days" required>
+     <input  type="text" class="total" placeholder=" 0.00 $" >
+     <button  class="res-button" type="button" >Rent Now</button>
+
+  </section>
+  
+  <section class="footer">
+    <p>CarRent© All Rights Reserved. 2021</p>
+  </section>
+
+  <script src="reserv.js"></script>
+  
+
+  </body>
+</html>

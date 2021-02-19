@@ -13,17 +13,33 @@ var type = document.querySelectorAll('select');
 
 type[0].addEventListener('click', function () {
 
-    var index = type[0].options.selectedIndex
+
+    for (let i = 1; i < type[1].length; i++) {
+
+        type[1].options[i].innerHTML ="";
+
+    }
+    for (let i = 1; i < type[2].length; i++) {
+
+        type[2].options[i].innerHTML ="";
+
+    }
+    type[1].options.selectedIndex=0;
+    type[2].options.selectedIndex=0;
+
+
+    var index = type[0].options.selectedIndex;
+    
   
 
     switch (index) {
         case 0:
 
-            for (let i = 1; i < type[1].length; i++) {
+            // for (let i = 1; i < type[1].length; i++) {
 
-                type[1].options[i].innerHTML = "";
+            //     type[1].options[i].innerHTML = "";
 
-            }
+            // }
             for (let i = 1; i < type[2].length; i++) {
                 type[2].options[i].innerHTML = "";
 
@@ -34,7 +50,7 @@ type[0].addEventListener('click', function () {
 
             for (let i = 0; i < moto.length; i++) {
 
-                type[1].options[i + 1].innerHTML = moto[i];
+                type[1].options[i+1].innerHTML = moto[i];
             }
             for (let i = 1; i < type[2].length; i++) {
                 type[2].options[i].innerHTML = "";
@@ -42,28 +58,30 @@ type[0].addEventListener('click', function () {
             }
             
 
+            
+
             break;
 
         //--------------case 2-----------------------
         case 2:
              
-            for (let i = 1; i < type[1].length; i++) {
-                type[1].options[i].innerHTML = "";
+            // for (let i = 1; i < type[1].length; i++) {
+            //     type[1].options[i].innerHTML = "";
 
-            }
+            // }
             for (let i = 0; i < citadine.length; i++) {
 
-                type[1].options[i + 1].innerHTML = citadine[i];
+                type[1].options[i+1].innerHTML = citadine[i];
             }
             type[2].options[1].innerHTML = "Manuelle";
             break;
         //--------------case 3-----------------------
         case 3:
-            for (let i = 1; i < type[1].length; i++) {
-                type[1].options[i].innerHTML = "";
+            // for (let i = 1; i < type[1].length; i++) {
+            //     type[1].options[i].innerHTML = "";
               
 
-            }
+            // }
             for (let i = 0; i < compact.length; i++) {
 
                 type[1].options[i + 1].innerHTML = compact[i];
@@ -75,10 +93,10 @@ type[0].addEventListener('click', function () {
 
       
         
-            for (let i = 1; i < type[1].length; i++) {
-                type[1].options[i].innerHTML = "";
+            // for (let i = 1; i < type[1].length; i++) {
+            //     type[1].options[i].innerHTML = "";
              
-            }
+            // }
             for (let i = 0; i < compact.length; i++) {
 
                 type[1].options[i + 1].innerHTML = compact[i];
@@ -88,10 +106,10 @@ type[0].addEventListener('click', function () {
             break;
         //--------------case 5-----------------------
         case 5:
-            for (let i = 1; i < type[1].length; i++) {
-                type[1].options[i].innerHTML = "";
+            // for (let i = 1; i < type[1].length; i++) {
+            //     type[1].options[i].innerHTML = "";
 
-            }
+            // }
 
             for (let i = 0; i < utilitaire.length; i++) {
 
@@ -102,10 +120,10 @@ type[0].addEventListener('click', function () {
         //--------------case 6-----------------------
         case 6:
 
-            for (let i = 1; i < type[1].length; i++) {
-                type[1].options[i].innerHTML = "";
+            // for (let i = 1; i < type[1].length; i++) {
+            //     type[1].options[i].innerHTML = "";
 
-            }
+            // }
             for (let i = 0; i < engin.length; i++) {
 
                 type[1].options[i + 1].innerHTML = engin[i];
@@ -114,10 +132,10 @@ type[0].addEventListener('click', function () {
             break;
         //--------------case 7-----------------------
         case 7:
-            for (let i = 1; i < type[1].length; i++) {
-                type[1].options[i].innerHTML = "";
+            // for (let i = 1; i < type[1].length; i++) {
+            //     type[1].options[i].innerHTML = "";
 
-            }
+            // }
 
             for (let i = 0; i < camion.length; i++) {
 

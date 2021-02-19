@@ -25,7 +25,7 @@ check.addEventListener('click', function (e) {
 
 var popbtn = document.querySelector('.send');
 var pop = document.querySelector('.pop-up');
-var closex = document.querySelector('.close');
+var closex =document.querySelector('.close');
 
 popbtn.addEventListener('click', function (e) {
     e.preventDefault();
